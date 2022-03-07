@@ -40,21 +40,24 @@ export class LoginComponent implements OnInit {
   onSubmit(form: NgForm) {
     console.log('Your form data : ', form.value);
     this._api.postTypeRequest('user/login', form.value).subscribe((res: any) => {
+      //console.log('Res.status: ' + res.status);
       if (res.status) {
         console.log(res)
         this._auth.setDataInLocalStorage('userData', JSON.stringify(res.data));
         this._auth.setDataInLocalStorage('token', res.token);
         this._router.navigate(['']);
       } else {
+        //this.isLogin = false 
       }
     }, err => {
       this.errorMessage = err['error'].message;
     });
   }
   isUserLogin() {
-    console.log(this._auth.getUserDetails())
+    console.log('User details: ' + this._auth.getUserDetails())
     if (this._auth.getUserDetails() != null) {
       this.isLogin = true;
+    } else {
     }
   }
   logout() {
