@@ -1,5 +1,5 @@
 # Example-NodeJS-Angular-MySQL
-![Captura de pantalla de 2021-12-22 11-29-43](https://user-images.githubusercontent.com/96082587/147132302-a7d33ae6-a7dc-4a2b-9789-bfa8e06b6253.png)
+![Angular + NodeJs + MySQL](https://user-images.githubusercontent.com/96082587/147132302-a7d33ae6-a7dc-4a2b-9789-bfa8e06b6253.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
 
